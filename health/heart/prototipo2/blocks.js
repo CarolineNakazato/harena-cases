@@ -1,7 +1,7 @@
 Blockly.Blocks['imagem_eletro'] = {
   init: function () {
     this.jsonInit({
-      message0: '%1 %2',
+      message0: '%1',
       args0: [
         {
           type: 'field_dropdown',
@@ -12,11 +12,6 @@ Blockly.Blocks['imagem_eletro'] = {
             [{src: '3ondaQRS.png', width: 200, height: 200, alt: 'heart 3'}, 'heart3'],
             [{src: '4ondaT.png', width: 200, height: 200, alt: 'heart 4'}, 'heart4']
           ]
-        },
-        {
-          type: 'input_value',
-          name: 'mov',
-          check: 'Mov',
         }
       ],
       message1: 'estrutura: %1',
@@ -45,9 +40,7 @@ Blockly.Blocks['imagem_eletro'] = {
       ],
       colour: 80,
       tooltip: 'Coração',
-      output: 'atvEle',
-      nextStatement: null,
-      previousStatement: null
+      output: 'atvEle'
     })
   }
 }
@@ -116,7 +109,7 @@ Blockly.Blocks['imagem_mov'] = {
 Blockly.Blocks['imagem_onda'] = {
   init: function () {
     this.jsonInit({
-      message0: '%1 %2',
+      message0: '%1',
       args0: [
         {
           type: 'field_dropdown',
@@ -128,15 +121,39 @@ Blockly.Blocks['imagem_onda'] = {
             [{src: '5segmentoSTECG.png', width: 200, height: 200, alt: 'ecg 5'}, 'ecg5'],
             [{src: '4ondaTECG.png', width: 200, height: 200, alt: 'ecg 4'}, 'ecg4']
           ]
-        },
-        {
-          type: 'input_value',
-          name: 'atvEle',
-          check: 'atvEle',
         }
       ],
         colour: 20,
-        tooltip: 'Eletro'
+        tooltip: 'Eletro',
+        output: 'onda'
+    })
+  }
+}
+
+Blockly.Blocks['sequence'] = {
+  init: function () {
+    this.jsonInit({
+      message0: '%1 onda %2 elétrico %3 mecânico',
+      args0: [
+        {
+        type: 'input_value',
+        name: 'VAR',
+        check: 'onda',
+        },
+        {
+          type: 'input_value',
+          name: 'VAR',
+          check: 'atvEle',
+        },
+        {
+          type: 'input_value',
+          name: 'VAR',
+          check: 'Mov',
+        }
+      ],
+     colour: 500,
+     nextStatement: null,
+     previousStatement: null
     })
   }
 }
