@@ -10,7 +10,8 @@ Blockly.Blocks['imagem_eletro'] = {
             [{src: '1ondaP.png', width: 200, height: 200, alt: 'heart 1'}, 'heart1'],
             [{src: '2segmentoPR.png', width: 200, height: 200, alt: 'heart 2'}, 'heart2'],
             [{src: '3ondaQRS.png', width: 200, height: 200, alt: 'heart 3'}, 'heart3'],
-            [{src: '4ondaT.png', width: 200, height: 200, alt: 'heart 4'}, 'heart4']
+            [{src: '4segmentoST.png', width: 200, height: 200, alt: 'heart 4'}, 'heart4'],
+            [{src: '5ondaT.png', width: 200, height: 200, alt: 'heart 4'}, 'heart5']
           ]
         }
       ],
@@ -55,9 +56,9 @@ Blockly.Blocks['imagem_mov'] = {
           name: 'entity',
           options: [
             [{src: '1movimento.png', width: 200, height: 200, alt: 'heart_mov 1'}, 'heart_mov1'],
-            [{src: '2movimento_segmentoPR.png', width: 200, height: 200, alt: 'heart_mov 2'}, 'heart_mov2'],
-            [{src: '2movimento.png', width: 200, height: 200, alt: 'heart_mov 3'}, 'heart_mov3'],
-            [{src: '3movimento.png', width: 200, height: 200, alt: 'heart_mov 4'}, 'heart_mov4']
+            [{src: '2movimento.png', width: 200, height: 200, alt: 'heart_mov 2'}, 'heart_mov2'],
+            [{src: '3movimento.png', width: 200, height: 200, alt: 'heart_mov 3'}, 'heart_mov3'],
+            [{src: '5movimento.png', width: 200, height: 200, alt: 'heart_mov 4'}, 'heart_mov4']
           ]
         }
       ],
@@ -118,8 +119,8 @@ Blockly.Blocks['imagem_onda'] = {
             [{src: '1ondaPECG.png', width: 200, height: 200, alt: 'ecg 1'}, 'ecg1'],
             [{src: '2segmentoPRECG.png', width: 200, height: 200, alt: 'ecg 2'}, 'ecg2'],
             [{src: '3ondaQRSECG.png', width: 200, height: 200, alt: 'ecg 3'}, 'ecg3'],
-            [{src: '5segmentoSTECG.png', width: 200, height: 200, alt: 'ecg 5'}, 'ecg5'],
-            [{src: '4ondaTECG.png', width: 200, height: 200, alt: 'ecg 4'}, 'ecg4']
+            [{src: '4segmentoSTECG.png', width: 200, height: 200, alt: 'ecg 4'}, 'ecg4'],
+            [{src: '5ondaTECG.png', width: 200, height: 200, alt: 'ecg 5'}, 'ecg5']
           ]
         }
       ],
